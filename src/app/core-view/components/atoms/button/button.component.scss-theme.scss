@@ -1,0 +1,24 @@
+@import '~@angular/material/theming';
+
+@mixin app-button-theme($theme) {
+  $accent: map-get($theme, accent);
+  $primary: map-get($theme, primary);
+  .app-button {
+    // contained
+    &.mat-raised-button {
+      font-weight: bold;
+      &.mat-primary {
+        color: mat-color($accent);
+      }
+    }
+    // outlined
+    &.mat-stroked-button {
+      &.mat-primary {
+        color: mat-color($accent);
+        background-color: mat-color($primary);
+        border: 1px solid mat-color($accent);
+        // font-weight: normal;
+      }
+    }
+  }
+}

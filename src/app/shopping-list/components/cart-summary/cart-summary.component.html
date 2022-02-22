@@ -1,0 +1,14 @@
+<div class="summary-container">
+  <div class="cart-header">Cart</div>
+  <div class="cart-summary" *ngFor="let product of selectedProducts">
+    <div class="product-name"></div>
+    <div class="product-quantity"></div>
+    <div class="product-price"></div>
+    <div class="product-cta--remove"></div>
+    <div class="divider"></div>
+  </div>
+  <div class="divider">
+    <mat-divider></mat-divider>
+  </div>
+  <div class="products-total">{{ total }}</div>
+</div>

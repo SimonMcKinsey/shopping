@@ -1,0 +1,16 @@
+@import "abstracts/mixins";
+
+:host {
+}
+
+.summary-container {
+  border: 1px solid var(--color-white);
+  @include flex-column(center, center);
+}
+
+.cart-header {
+  background-color: gray;
+  text-align: center;
+  width: 100%;
+  border: 1px solid var(--color-white);
+}

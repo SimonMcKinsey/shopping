@@ -1,0 +1,23 @@
+@import "abstracts/mixins";
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+.shopping-container {
+  @include flex-row(flex-start, flex-start);
+  height: 100%;
+  width: 100%;
+}
+
+.shopping-filters {
+  // max-width: 30rem;
+  // min-width: 30rem;
+  height: 100%;
+  flex: 15%;
+}
+
+.shopping-cart {
+  flex: 85%;
+}

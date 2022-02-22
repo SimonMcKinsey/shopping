@@ -1,0 +1,16 @@
+<div class="filters-header">Filters</div>
+
+<div class="filter-group">
+  <div class="filter-label">Price</div>
+  <div class="filters-list">
+    <app-checkbox>< 100$</app-checkbox>
+    <app-checkbox>> 200$</app-checkbox>
+  </div>
+</div>
+
+<div class="filter-group">
+  <div class="filter-label">Rating</div>
+  <div class="filters-list">
+    <app-checkbox *ngFor="let i of [1, 2, 3, 4, 5]">{{ i }}</app-checkbox>
+  </div>
+</div>

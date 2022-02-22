@@ -1,0 +1,5 @@
+<div class="input-wrapper">
+  <!-- <ng-content select="[suffix]"></ng-content> -->
+
+  <input [type]="type" [value]="value" placeholder="{{placeholder}}" #input (keyup)="onKeyup($event)" />
+</div>

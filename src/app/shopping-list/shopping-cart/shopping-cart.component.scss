@@ -1,0 +1,35 @@
+@import "abstracts/mixins";
+
+:host {
+  @include flex-column(flex-start, flex-start);
+}
+
+:host ::ng-deep {
+  app-shopping-card {
+    margin: 1rem;
+  }
+
+  app-cart-summary {
+  }
+
+  app-input {
+    width: 68%;
+    margin: 4rem 8rem
+  }
+}
+
+.shopping-cart-container {
+  @include flex-row(flex-start, flex-start);
+}
+
+.shopping-cart {
+  @include flex-row(space-evenly, flex-start);
+  flex-wrap: wrap;
+
+  flex: 80%;
+}
+
+.cart-summary {
+  flex: 20%;
+  margin: 2rem;
+}
