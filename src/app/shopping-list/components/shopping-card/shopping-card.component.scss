@@ -1,0 +1,26 @@
+@import "abstracts/mixins";
+
+:host {
+  display: block;
+  max-width: 30rem;
+  max-width: 30rem;
+}
+
+:host ::ng-deep {
+  app-shopping-card {
+    margin: 1rem;
+  }
+
+  app-cart-summary {
+  }
+}
+
+.product-image {
+  width: 30rem;
+}
+
+.card-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

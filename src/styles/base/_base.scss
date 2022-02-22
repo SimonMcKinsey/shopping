@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  color: var(--color-white);
+
+  @include respond(big-regular-desktop) {
+    font-size: 49.5%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 52.5%;
+  }
+
+  @include respond(default-desktop) {
+    font-size: 48.5%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 46.5%; // 7.04px
+  }
+
+  @include respond(tab-port) {
+    font-size: 40%; // 6.4px
+  }
+
+  @include respond(phone) {
+    font-size: 30%; // 4.8px
+  }
+}
+
+body {
+  // box-sizing: border-box;
+  // font-family: Arial, Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--color-background);
+}

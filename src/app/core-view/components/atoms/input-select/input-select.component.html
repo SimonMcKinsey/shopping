@@ -1,0 +1,8 @@
+<div class="input-wrapper">
+  <select (change)="onSelect($event)" class="selectBox">
+    <option>Select</option>
+    <option *ngFor="let item of dataSource; index as i" [value]="item">
+      {{ item }}
+    </option>
+  </select>
+</div>

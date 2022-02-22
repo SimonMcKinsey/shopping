@@ -1,0 +1,17 @@
+<mat-card class="shopping-card">
+  <form [formGroup]="shoppingForm" (ngSubmit)="onInputChanged()">
+    <img class="product-image" mat-card-image [src]="product.imageUrl" />
+    <mat-card-content>
+      <div class="wrapper">
+        <div>{{ product.rating }}</div>
+        <div>{{ product.price }}</div>
+      </div>
+      <div>{{ product.name }}</div>
+      <div class="card-description">{{ product.description }}</div>
+    </mat-card-content>
+    <app-input-select
+      formControlName="quantity"
+      [dataSource]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    ></app-input-select>
+  </form>
+</mat-card>

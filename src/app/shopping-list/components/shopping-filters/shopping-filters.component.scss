@@ -1,0 +1,26 @@
+@import "abstracts/mixins";
+
+:host {
+  @include flex-column(flex-start, flex-start);
+  height: 100%;
+  padding: 4rem;
+}
+
+.filters-header {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.filter-group {
+  @include flex-column(flex-start, flex-start);
+  margin-top: 1rem;
+}
+
+.filters-list {
+  @include flex-column(flex-start, flex-start);
+}
+
+.filter-label {
+  font-weight: bold;
+}

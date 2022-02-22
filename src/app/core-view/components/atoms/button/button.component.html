@@ -1,0 +1,6 @@
+<button mat-button class="app-button" color="{{color}}" [class.mat-raised-button]="variant==='contained'"
+  [class.mat-stroked-button]="variant==='outlined'" [type]="type" [disabled]="isDisabled">
+  <span>
+    <ng-content> </ng-content>
+  </span>
+</button>
